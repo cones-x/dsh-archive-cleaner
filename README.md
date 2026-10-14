@@ -47,7 +47,7 @@ DSH（DeepSeek Harness）官方只提供「归档会话」功能，归档后的�
 ### 方式一：通过 `dsh plugin` 命令（推荐）
 
 ```bash
-dsh plugin --profile desktop add @conessun/dsh-archive-cleaner
+dsh plugin --profile desktop add dsh-archive-cleaner
 ```
 
 ### 方式二：本地路径安装
@@ -65,7 +65,7 @@ pnpm add /path/to/dsh-archive-cleaner
     "bundles": [
       "@deepseek-ai/dsh-base",
       "@deepseek-ai/dsh-web-app",
-      "@conessun/dsh-archive-cleaner"
+      "dsh-archive-cleaner"
     ]
   }
 }

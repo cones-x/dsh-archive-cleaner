@@ -47,7 +47,7 @@ On any **archived** session in the sidebar, open the `⋯` menu — a red "🗑 
 ### Option 1: via `dsh plugin` (recommended)
 
 ```bash
-dsh plugin --profile desktop add @conessun/dsh-archive-cleaner
+dsh plugin --profile desktop add dsh-archive-cleaner
 ```
 
 ### Option 2: local path
@@ -65,7 +65,7 @@ Then add the bundle to `dsh.profile.bundles` in the profile's `package.json`:
     "bundles": [
       "@deepseek-ai/dsh-base",
       "@deepseek-ai/dsh-web-app",
-      "@conessun/dsh-archive-cleaner"
+      "dsh-archive-cleaner"
     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@conessun/dsh-archive-cleaner",
+  "name": "dsh-archive-cleaner",
   "version": "0.2.0",
   "description": "DSH plugin: 清理工作区归档文件 + 删除已归档会话日志，在会话 ⋯ 菜单注入「彻底删除」按钮",
   "type": "module",
@@ -26,17 +26,6 @@
     "CHANGELOG.md"
   ],
   "license": "MIT",
-  "author": {
-    "name": "conessun"
-  },
-  "homepage": "https://github.com/conessun/dsh-archive-cleaner#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/conessun/dsh-archive-cleaner.git"
-  },
-  "bugs": {
-    "url": "https://github.com/conessun/dsh-archive-cleaner/issues"
-  },
   "keywords": [
     "dsh",
     "dsh-plugin",

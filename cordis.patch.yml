@@ -4,5 +4,5 @@
 # 安装：将本包加入 profile 的 `dsh.profile.bundles` 列表。
 - insert:
     - id: archive-cleaner
-      name: '@conessun/dsh-archive-cleaner'
+      name: 'dsh-archive-cleaner'
       config: {}
