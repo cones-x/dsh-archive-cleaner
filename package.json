@@ -1,0 +1,65 @@
+{
+  "name": "@conessun/dsh-archive-cleaner",
+  "version": "0.2.0",
+  "description": "DSH plugin: 清理工作区归档文件 + 删除已归档会话日志，在会话 ⋯ 菜单注入「彻底删除」按钮",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README_EN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "conessun"
+  },
+  "homepage": "https://github.com/conessun/dsh-archive-cleaner#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conessun/dsh-archive-cleaner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/conessun/dsh-archive-cleaner/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "archive",
+    "cleaner",
+    "session",
+    "delete-session",
+    "归档",
+    "清理"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  }
+}
